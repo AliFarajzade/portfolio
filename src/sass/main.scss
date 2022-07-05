@@ -1,0 +1,8 @@
+@import 'reset';
+@import 'variables';
+@import 'typography';
+
+.container {
+    max-width: $max-screen-width;
+    margin: 0 auto;
+}

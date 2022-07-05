@@ -1,0 +1,18 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "My portfolio",
+    "main": "index.js",
+    "source": "src/index.html",
+    "scripts": {
+        "dev": "parcel -p 3000",
+        "build": "parcel build"
+    },
+    "keywords": [],
+    "author": "Ali Farajzade",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/transformer-sass": "2.6.2",
+        "parcel": "^2.6.2"
+    }
+}
