@@ -19,11 +19,14 @@
         />
         <link rel="stylesheet" href="./sass/main.scss" />
         <script src="./ts/main.ts" defer></script>
+        <script src="./ts/typewriter.ts" defer></script>
         <title>Portfolio</title>
     </head>
     <body>
+        <!-- Header -->
         <header class="header">
             <div class="container">
+                <!-- Navbar -->
                 <nav class="navbar">
                     <ul class="navbar__list">
                         <li class="navbar__item"><a href="/">Home</a></li>
@@ -36,6 +39,19 @@
                         <a href="#projects">Projects</a>
                     </button>
                 </nav>
+                <div class="intro">
+                    <h1 class="intro__name">
+                        Hi, I'm <span class="color-swing">Ali Farajzade</span>
+                    </h1>
+                    <div class="intro__typewriter">
+                        <p class="typewriter">
+                            I'm a
+                            <span
+                                data-text="front-end developer., back-end developer., linux enthusiast."
+                            ></span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </header>
     </body>
