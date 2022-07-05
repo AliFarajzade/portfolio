@@ -1,0 +1,96 @@
+:root {
+    --no-of-slides: 7;
+    --slides-in-view: 6;
+    --slide-width: 30rem;
+    --slide-height: 30rem;
+    --iteration-time: 10s;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(
+            calc(var(--slide-width) * var(--no-of-slides) * -1)
+        );
+    }
+}
+
+.carousel__wrapper {
+    display: flex;
+    align-items: center;
+
+    width: calc(var(--slides-in-view) * var(--slide-width));
+    max-width: $max-screen-width;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    padding: 50px 0;
+    background: #39145a;
+
+    overflow: hidden;
+    width: calc(2 * var(--no-of-slides));
+
+    > h1 {
+        text-align: center;
+        font-size: 3.5rem;
+        color: white;
+        margin-bottom: 4rem;
+    }
+}
+
+.carousel__slide {
+    animation: scroll var(--iteration-time) linear infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+
+    min-width: var(--slide-width);
+
+    padding: 2em;
+    color: white;
+
+    &[data-push-down] {
+        > span {
+            transform: translateY(20px);
+        }
+    }
+
+    &--reverse {
+        animation-direction: reverse;
+    }
+}
+
+.carousel__image {
+    width: 12rem;
+}
+
+/* just for analysis remove this 3 rules later*/
+.carousel__slide {
+    position: relative;
+}
+
+.carousel {
+    counter-reset: slideNo;
+}
+
+// .carousel__slide::before {
+//     counter-increment: slideNo;
+//     content: counter(slideNo);
+//     position: absolute;
+//     top: 0%;
+//     left: 50%;
+//     font-size: 2rem;
+//     color: lime;
+// }
+
+.carousel__title {
+    font-size: 3rem;
+    font-weight: 500;
+}
