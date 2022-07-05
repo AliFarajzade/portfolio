@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        gap: 4rem;
+    }
+    &__item {
+        font-size: 2rem;
+
+        &:hover {
+            color: #ddc6fa;
+        }
+    }
+}
