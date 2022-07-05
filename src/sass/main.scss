@@ -3,6 +3,10 @@
 @import 'variables';
 @import 'typography';
 
+@import 'components/header';
+@import 'components/navbar';
+@import 'components/button';
+
 .container {
     max-width: $max-screen-width;
     margin: 0 auto;
