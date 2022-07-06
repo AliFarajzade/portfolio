@@ -1,0 +1,52 @@
+.about {
+    background-color: #222;
+    padding: 10rem 3rem;
+    line-height: 1.6;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 2rem;
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+
+    &__heading {
+        @include respond(tab-port) {
+            order: -2;
+        }
+        text-align: center;
+        color: white;
+        margin-bottom: 8rem;
+        font-size: 3.5rem;
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+    &__content {
+        color: white;
+    }
+
+    &__name {
+        font-size: 5rem;
+    }
+    &__text {
+        @include respond(tab-port) {
+            max-width: 520px;
+        }
+        font-size: 2rem;
+        color: #ccc;
+    }
+
+    &__image {
+        @include respond(tab-port) {
+            order: -1;
+            justify-self: unset;
+        }
+        max-height: 65rem;
+        justify-self: end;
+    }
+}
