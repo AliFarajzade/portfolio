@@ -8,7 +8,7 @@ var textIndex = 0
 
 setTimeout(() => {
     typing(textIndex, textArr[textIndex])
-}, 1000)
+}, 8500)
 
 function typing(textIndex, text) {
     var charIndex = 0
