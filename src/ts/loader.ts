@@ -56,6 +56,7 @@ export const startProgress = () => {
                 opacity: 0,
                 delay: 2,
                 duration: 1,
+                position: 'absolute',
             })
 
             gsap.to('body', {
