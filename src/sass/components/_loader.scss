@@ -1,0 +1,107 @@
+body {
+    overflow-y: hidden;
+}
+
+.loader {
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0b134f;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    &__box {
+        padding: 50px 2rem;
+        width: 90%;
+        max-width: 550px;
+        border: 3px solid #00ff37;
+        border-top-color: #6cff8c7a;
+        border-bottom-color: #6cff8c7a;
+        height: 250px;
+    }
+
+    &__heading {
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        > span {
+            margin: 0 3px;
+            animation: Pulse 600ms linear infinite;
+            display: inline-block;
+            width: 23px;
+            height: 23px;
+            transform: translateY(1px);
+            border-radius: 50%;
+            background-color: white;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 37rem;
+        opacity: 0;
+    }
+
+    &__progress {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 100px;
+        height: 10px;
+        background-color: white;
+        transform: translateY(70px);
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+
+        > span {
+            transform: translateY(30px);
+            font-weight: 600;
+        }
+
+        &::after {
+            animation: Loading 5000ms linear forwards;
+            position: absolute;
+            content: '';
+            z-index: 10;
+            top: 0;
+            left: 0;
+            height: inherit;
+            border-radius: inherit;
+            background-color: #00ff37;
+        }
+    }
+}
+
+@keyframes Pulse {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
