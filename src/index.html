@@ -11,6 +11,10 @@
             rel="stylesheet"
         />
         <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -18,13 +22,37 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="./sass/main.scss" />
-        <script src="./ts/main.ts" defer></script>
+        <script src="./ts/main.ts" type="module" defer></script>
         <script src="./ts/typewriter.ts" defer></script>
         <title>Portfolio</title>
     </head>
     <body>
+        <!-- Loader  -->
+        <div class="loader" id="loader">
+            <img
+                id="loaderImage"
+                src="./assets/images/loader20.svg"
+                alt="Loader"
+                class="loader__image"
+            />
+            <div class="loader__box" id="loaderBox">
+                <div class="loader__heading" id="loaderHeading">
+                    L<span></span>ading...
+                </div>
+                <div class="loader__progress" id="loaderProgressContainer">
+                    <span>0%</span>
+                    <span id="loaderProgress">100%</span>
+                </div>
+            </div>
+        </div>
         <!-- Header -->
         <header class="header">
+            <img
+                id="loaderImage"
+                src="./assets/images/loader20.svg"
+                alt="Loader"
+                class="loader__image"
+            />
             <div class="container">
                 <!-- Navbar -->
                 <nav class="navbar">
