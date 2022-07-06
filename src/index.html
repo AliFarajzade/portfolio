@@ -60,15 +60,15 @@
                     <div class="scroll-down__chevron"></div>
                 </div>
                 <!-- Github Button -->
-                <button class="btn btn--header">
-                    <a href="https://github.com/alifarajzade">
+                <button class="btn btn--header animated-btn">
+                    <a target="_blank" href="https://github.com/alifarajzade">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </button>
             </div>
         </header>
         <!-- Infinite Carousel -->
-        <!-- TODO: Add bootstrap, tailwind, linux, terminal and Chakra -->
+        <!-- TODO: Add bootstrap, tailwind, linux, terminal, Chakra, styled components, parcel, emotion and firebase. -->
         <section class="carousel">
             <h1>My Experties</h1>
             <!-- 1 -->
@@ -331,6 +331,457 @@
                         class="carousel__image"
                     />
                     <span class="carousel__title">GitHub</span>
+                </div>
+            </div>
+        </section>
+        <!-- Projects -->
+        <section class="projects">
+            <div class="container">
+                <h1 class="projects__title">Projects</h1>
+                <!-- TODO: Add links -->
+                <!-- Passager -->
+                <div class="projects__card">
+                    <div class="projects__content">
+                        <!-- Info -->
+                        <div
+                            class="projects__name"
+                            style="
+                                background-image: linear-gradient(
+                                    to right,
+                                    #28b485,
+                                    #00ff04
+                                );
+                                -webkit-background-clip: text;
+                                background-clip: text;
+                                color: transparent;
+                            "
+                        >
+                            <img
+                                src="./assets/images/passager-logo.png"
+                                alt="Logo"
+                            />
+                            Passager
+                        </div>
+                        <h2>
+                            Full-Stack
+                            <span class="typescript">TypeScript</span> Tour
+                            Application.
+                        </h2>
+                        <p>
+                            Passager is a tour application with lots of tours
+                            and advantures! <br />
+                            It is built with
+                            <strong>Next</strong>, <strong>React</strong>,
+                            <strong>Recoil (State manager)</strong>,
+                            <strong>TailwindCSS</strong> and
+                            <strong>Sass</strong> on the front-end with
+                            server-side rendering, and <strong>Node</strong>,
+                            <strong>Express</strong> and
+                            <strong>MongoDB</strong> on the back-end side and
+                            It's hosted on <strong>Heroku</strong> and
+                            <strong>Vercel</strong>. It includes features like
+                            <strong>authentication</strong> with
+                            <strong>JWT</strong>, complex
+                            <strong>queries</strong>, cool
+                            <strong>animations</strong> and
+                            <strong>maps!</strong>
+                        </p>
+                        <!-- Links -->
+                        <div class="projects__links">
+                            <div class="projects__link">
+                                <i class="fa-solid fa-link"></i>
+                                <span>Live Website</span>
+                            </div>
+                            <div class="projects__link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        src="./assets/images/sample.jpg"
+                        alt="Passager"
+                        class="projects__image"
+                    />
+                    <!-- Tech Stack -->
+                    <div class="projects__techs">
+                        <h2>
+                            Main Technologies
+                            <span class="tech__link">(see all)</span>
+                        </h2>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                                alt="TypeScript"
+                            />
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/next-dark.png"
+                                alt="Next"
+                            />
+                            <span>Next</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1920px-React-icon.svg.png?20220125121207"
+                                alt="React"
+                            />
+                            <span style="transform: translateY(4px)"
+                                >React</span
+                            >
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/recoil.svg"
+                                alt="Recoil"
+                            />
+                            <span>Recoil</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
+                                alt="TailwindCSS"
+                            />
+                            <span>TailwindCSS</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
+                                alt="Sass"
+                            />
+                            <span style="transform: translateY(4px)">Sass</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                                alt="Node"
+                            />
+                            <span style="transform: translateY(8px)">Node</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/express.png"
+                                alt="Express"
+                            />
+                            <span>Express</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/mongodb.svg"
+                                alt="MongoDB"
+                            />
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foruma -->
+                <div class="projects__card">
+                    <div class="projects__content">
+                        <!-- Info -->
+                        <div
+                            class="projects__name"
+                            style="
+                                background-image: linear-gradient(
+                                    to right,
+                                    #ff4005,
+                                    #ffb03a
+                                );
+                                -webkit-background-clip: text;
+                                background-clip: text;
+                                color: transparent;
+                            "
+                        >
+                            <img
+                                src="./assets/images/foruma-logo.png"
+                                alt="Logo"
+                            />
+                            Foruma
+                        </div>
+                        <h2>
+                            Full-Stack
+                            <span class="typescript">TypeScript</span> Forum
+                            Application.
+                        </h2>
+                        <p>
+                            Foruma is a forum website based on
+                            <strong>Firebase (Back-End as a Service)</strong>.
+                            It is built with <strong>Next</strong>,
+                            <strong>React</strong>,
+                            <strong>Recoil (State manager)</strong>
+                            and <strong>Chakra UI</strong> for styling with
+                            <strong>server-side rendering</strong> ablities. It
+                            includes features like
+                            <strong>authentication</strong> with
+                            <strong>Google OAuth</strong>, advanced
+                            <strong>file uploads</strong> and more... <br />
+                            Application is hosted on <strong>Vercel</strong>.
+                        </p>
+                        <!-- Links -->
+                        <div class="projects__links">
+                            <div class="projects__link">
+                                <i class="fa-solid fa-link"></i>
+                                <span>Live Website</span>
+                            </div>
+                            <div class="projects__link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        src="./assets/images/foruma.jpg"
+                        alt="Foruma"
+                        class="projects__image"
+                    />
+                    <!-- Tech Stack -->
+                    <div class="projects__techs">
+                        <h2>
+                            Main Technologies
+                            <span class="tech__link">(see all)</span>
+                        </h2>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                                alt="TypeScript"
+                            />
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/firebase.png"
+                                alt="Firebase"
+                                style="transform: scale(0.7)"
+                            />
+                            <span style="transform: translateY(-13px)"
+                                >Firebase</span
+                            >
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/next-dark.png"
+                                alt="Next"
+                            />
+                            <span>Next</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1920px-React-icon.svg.png?20220125121207"
+                                alt="React"
+                            />
+                            <span style="transform: translateY(4px)"
+                                >React</span
+                            >
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/recoil.svg"
+                                alt="Recoil"
+                            />
+                            <span>Recoil</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/chakra.jpg"
+                                alt="Chakra UI"
+                            />
+                            <span>Chakra UI</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/emotion.png"
+                                alt="Emotion"
+                            />
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Execer -->
+                <div class="projects__card">
+                    <div class="projects__content">
+                        <!-- Info -->
+                        <div class="projects__name" style="color: red">
+                            <img
+                                src="./assets/images/execer-logo.png"
+                                alt="Logo"
+                            />
+                            Execer
+                        </div>
+                        <h2>
+                            <span class="typescript">TypeScript</span> React
+                            Fitness Application.
+                        </h2>
+                        <p>
+                            Execer is fitness app that is built with
+                            <strong>Rapid API</strong> for data. I've used
+                            <strong>React</strong>, <strong>Rapid API</strong>,
+                            <strong>Material UI</strong> and
+                            <strong>Sass</strong> for styling. This app
+                            recommands you workouts based on targeted muscels.
+                            It shows related Youtube videos for more info and
+                            other exercises that might be helpful.
+                        </p>
+                        <!-- Links -->
+                        <div class="projects__links">
+                            <div class="projects__link">
+                                <i class="fa-solid fa-link"></i>
+                                <span>Live Website</span>
+                            </div>
+                            <div class="projects__link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        src="./assets/images/execer.jpg"
+                        alt="Foruma"
+                        class="projects__image"
+                    />
+                    <!-- Tech Stack -->
+                    <div class="projects__techs">
+                        <h2>
+                            Main Technologies
+                            <span class="tech__link">(see all)</span>
+                        </h2>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                                alt="TypeScript"
+                            />
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1920px-React-icon.svg.png?20220125121207"
+                                alt="React"
+                            />
+                            <span style="transform: translateY(4px)"
+                                >React</span
+                            >
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/material-ui.svg"
+                                alt="Material UI"
+                            />
+                            <span style="transform: translateY(8px)"
+                                >Material UI</span
+                            >
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/styled-components.png"
+                                alt="Styled Components"
+                            />
+                            <span>Styled Components</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
+                                alt="Sass"
+                            />
+                            <span style="transform: translateY(10px)"
+                                >Sass</span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <!-- Forkiy -->
+                <div class="projects__card">
+                    <div class="projects__content">
+                        <!-- Info -->
+                        <div
+                            class="projects__name"
+                            style="
+                                background-image: linear-gradient(
+                                    to right,
+                                    #fad388,
+                                    #f48b82
+                                );
+                                -webkit-background-clip: text;
+                                background-clip: text;
+                                color: transparent;
+                            "
+                        >
+                            <img
+                                src="./assets/images/forkify-logo.png"
+                                alt="Logo"
+                            />
+                            Forkify
+                        </div>
+                        <h2>
+                            Vanilla JavaScript
+                            <i style="text-decoration: underline">MVC-CRUD</i>
+                            Recipe Application.
+                        </h2>
+                        <p>
+                            Forkify is a <strong>CRUD</strong> application that
+                            was built with <strong>MVC</strong> architecture
+                            witout any library and only with
+                            <strong>JavaScript</strong>. You can search, add and
+                            even bookmark your favorite recipes! It includes
+                            pagination too! <br />
+                            The app is hosted on <strong>Netlify</strong>
+                        </p>
+                        <!-- Links -->
+                        <div class="projects__links">
+                            <div class="projects__link">
+                                <i class="fa-solid fa-link"></i>
+                                <span>Live Website</span>
+                            </div>
+                            <div class="projects__link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        src="./assets/images/forkify.jpg"
+                        alt="Foruma"
+                        class="projects__image"
+                    />
+                    <!-- Tech Stack -->
+                    <div class="projects__techs">
+                        <h2>
+                            Main Technologies
+                            <span class="tech__link">(see all)</span>
+                        </h2>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                                alt="JavaScript"
+                            />
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
+                                alt="Sass"
+                            />
+                            <span style="transform: translateY(10px)"
+                                >Sass</span
+                            >
+                        </div>
+                        <div class="projects__tech-card">
+                            <img
+                                src="./assets/images/parcel.png"
+                                alt="Parcel"
+                            />
+                            <span style="transform: translateY(10px)"
+                                >Parcel</span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__others">
+                    <span>...and There are many other projects on my</span>
+                    <a
+                        target="_blank"
+                        href="https://github.com/AliFarajzade?tab=repositories"
+                        ><i class="fa-brands fa-github animated-btn"></i
+                    ></a>
                 </div>
             </div>
         </section>
