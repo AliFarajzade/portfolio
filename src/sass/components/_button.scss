@@ -74,10 +74,12 @@ $pink-shadow: #ffe3e2;
         background: none;
         width: max-content;
         font-size: 5rem;
+    }
+}
 
-        &:hover {
-            animation: AnimatedButton 200ms infinite;
-        }
+.animated-btn {
+    &:hover {
+        animation: AnimatedButton 200ms infinite;
     }
 }
 
