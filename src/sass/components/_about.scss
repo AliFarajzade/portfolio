@@ -16,6 +16,8 @@
     }
 
     &__heading {
+        user-select: none;
+
         @include respond(tab-port) {
             order: -2;
         }
@@ -42,6 +44,8 @@
     }
 
     &__image {
+        user-select: none;
+
         @include respond(tab-port) {
             order: -1;
             justify-self: unset;
