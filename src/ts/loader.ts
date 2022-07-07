@@ -6,7 +6,7 @@ const loaderProgressElement = document.getElementById(
 
 let progress = 0
 
-export const startProgress = () => {
+const startProgress = () => {
     const interval = setInterval(() => {
         if (progress === 100) {
             loaderProgressElement.style.color = '#00ff37'
@@ -71,3 +71,5 @@ export const startProgress = () => {
         loaderProgressElement.textContent = `${progress}%`
     }, 50)
 }
+
+startProgress()
