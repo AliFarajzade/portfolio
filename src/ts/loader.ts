@@ -4,7 +4,13 @@ const loaderProgressElement = document.getElementById(
     'loaderProgress'
 )! as HTMLSpanElement
 
+const loaderProgressBarElement = document.getElementById(
+    'loaderProgressBar'
+)! as HTMLDivElement
+
 let progress = 0
+
+console.log(loaderProgressElement.after())
 
 const startProgress = () => {
     const interval = setInterval(() => {
@@ -69,6 +75,7 @@ const startProgress = () => {
         }
         progress += 1
         loaderProgressElement.textContent = `${progress}%`
+        loaderProgressBarElement.style.width = `${progress}%`
     }, 50)
 }
 

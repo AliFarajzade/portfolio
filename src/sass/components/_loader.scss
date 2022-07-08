@@ -73,18 +73,16 @@ body {
             transform: translateY(30px);
             font-weight: 600;
         }
+    }
 
-        &::after {
-            animation: Loading 5000ms linear forwards;
-            position: absolute;
-            content: '';
-            z-index: 10;
-            top: 0;
-            left: 0;
-            height: inherit;
-            border-radius: inherit;
-            background-color: #00ff37;
-        }
+    &__progress-bar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border-radius: inherit;
+        width: 0%;
+        height: inherit;
+        background-color: #00ff37;
     }
 }
 
@@ -94,14 +92,5 @@ body {
     }
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes Loading {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
     }
 }
