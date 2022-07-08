@@ -76,7 +76,7 @@ const startProgress = () => {
 
             setTimeout(() => {
                 console.log(loaderElement.firstChild?.nextSibling?.remove())
-            }, 2200)
+            }, 2300)
 
             return
         }
