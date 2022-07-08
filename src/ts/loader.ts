@@ -8,15 +8,17 @@ const loaderProgressBarElement = document.getElementById(
     'loaderProgressBar'
 )! as HTMLDivElement
 
-let progress = 0
+const loaderElement = document.getElementById('loader')! as HTMLDivElement
 
-console.log(loaderProgressElement.after())
+let progress = 0
 
 const startProgress = () => {
     const interval = setInterval(() => {
         if (progress === 100) {
             loaderProgressElement.style.color = '#00ff37'
             clearInterval(interval)
+
+            if (!window.location.hash) window.scrollTo(0, 0)
 
             gsap.to('#loaderProgressContainer', {
                 rotate: '90deg',
@@ -40,9 +42,9 @@ const startProgress = () => {
             })
 
             gsap.to('#loaderBox', {
-                rotate: '360deg',
+                rotate: '36deg',
                 delay: 0.1,
-                duration: 20,
+                duration: 2,
             })
 
             gsap.to('#loaderImage', {
@@ -52,9 +54,9 @@ const startProgress = () => {
             })
 
             gsap.to('#loaderImage', {
-                rotate: '-720deg',
+                rotate: '-1800deg',
                 delay: 0.1,
-                duration: 100,
+                duration: 250,
             })
 
             gsap.to('#loader', {
@@ -63,6 +65,7 @@ const startProgress = () => {
                 delay: 2,
                 duration: 1,
                 position: 'absolute',
+                display: 'none',
             })
 
             gsap.to('body', {
@@ -70,6 +73,10 @@ const startProgress = () => {
                 delay: 2,
                 duration: 1,
             })
+
+            setTimeout(() => {
+                console.log(loaderElement.firstChild?.nextSibling?.remove())
+            }, 2200)
 
             return
         }
