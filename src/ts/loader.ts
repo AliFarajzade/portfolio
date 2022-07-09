@@ -18,8 +18,6 @@ const startProgress = () => {
             loaderProgressElement.style.color = '#00ff37'
             clearInterval(interval)
 
-            if (!window.location.hash) window.scrollTo(0, 0)
-
             gsap.to('#loaderProgressContainer', {
                 rotate: '90deg',
                 delay: 0.1,
