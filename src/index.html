@@ -18,8 +18,12 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="./sass/main.scss" />
+        <script async>
+            if (!window.location.hash) window.scrollTo(0, 0)
+        </script>
         <script src="./ts/loader.ts" type="module" defer></script>
         <script src="./ts/typewriter.ts" defer></script>
+        <script src="./ts/toast.ts" defer></script>
         <title>Portfolio</title>
     </head>
     <body>
@@ -860,5 +864,24 @@
                 </a>
             </div>
         </section>
+        <!-- Toast -->
+        <article id="toast" class="toast">
+            <div class="toast__content">
+                <p class="toast__text">
+                    با عرض پوزش؛ <br />
+                    به دلیل این‌که پروژه های من در پلتفرم های خارجیِ تحریم شده
+                    میزبانی شدند، لطفا برای بازدید از آن‌ها از VPN استفاده کنید.
+                </p>
+            </div>
+            <button
+                id="toastClose"
+                class="btn toast__close"
+                aria-label="confirm"
+            >
+                متوجه شدم
+            </button>
+        </article>
+        <!-- Alert Audio -->
+        <audio id="alert" hidden src="./assets/audio/alert.wav"></audio>
     </body>
 </html>
