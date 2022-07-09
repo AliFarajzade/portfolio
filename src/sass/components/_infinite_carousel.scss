@@ -1,9 +1,9 @@
 :root {
-    --no-of-slides: 7;
+    --no-of-slides: 11;
     --slides-in-view: 6;
     --slide-width: 30rem;
     --slide-height: 30rem;
-    --iteration-time: 10s;
+    --iteration-time: 14s;
 }
 
 @keyframes scroll {
@@ -31,7 +31,7 @@
 .carousel {
     user-select: none;
     padding: 10rem 0;
-    background: #5c9a6a;
+    background: #398f4d;
 
     overflow: hidden;
     width: calc(2 * var(--no-of-slides));
