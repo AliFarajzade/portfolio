@@ -35,7 +35,7 @@
     margin: 2rem;
 
     width: 90%;
-    max-width: 37rem;
+    max-width: 39rem;
     user-select: none;
     height: max-content;
 
@@ -50,12 +50,16 @@
     }
 
     &__content {
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
     &__text {
         line-height: 1.8;
         color: #333;
+
+        > span {
+            font-weight: bold;
+        }
     }
 
     &__close {
