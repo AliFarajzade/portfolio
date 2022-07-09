@@ -9,11 +9,9 @@ let hasShown = false
 
 const observer = new IntersectionObserver(
     (entries: IntersectionObserverEntry[]) => {
-        console.log(entries)
         const { isIntersecting } = entries[0]
 
         if (isIntersecting && !hasShown) {
-            console.log('Fire')
             hasShown = true
             toastElement.classList.add('toast--animate')
             alertElement.volume = 0.5
