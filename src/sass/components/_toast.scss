@@ -52,6 +52,10 @@
     &__content {
         font-size: 2rem;
         margin-bottom: 2rem;
+
+        @media (max-width: 523px) {
+            font-size: 1.8rem;
+        }
     }
     &__text {
         line-height: 1.8;

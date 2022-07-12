@@ -70,6 +70,10 @@
 
 .carousel__image {
     width: 12rem;
+
+    @media (max-width: 500px) {
+        width: 10rem;
+    }
 }
 
 /* just for analysis remove this 3 rules later*/

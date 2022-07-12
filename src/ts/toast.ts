@@ -12,10 +12,10 @@ const observer = new IntersectionObserver(
         const { isIntersecting } = entries[0]
 
         if (isIntersecting && !hasShown) {
-            hasShown = true
-            toastElement.classList.add('toast--animate')
             alertElement.volume = 0.5
             alertElement.play()
+            hasShown = true
+            toastElement.classList.add('toast--animate')
         }
     },
     {
