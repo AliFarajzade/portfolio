@@ -1,0 +1,27 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "source": "src/index.html",
+    "browserslist": [
+        "defaults",
+        "not dead",
+        "not Explorer <= 11"
+    ],
+    "scripts": {
+        "dev": "parcel --port 3000",
+        "build": "parcel build --no-source-maps"
+    },
+    "keywords": [],
+    "author": "Ali Farajzade",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/transformer-sass": "2.6.2",
+        "autoprefixer": "^10.4.7",
+        "parcel": "^2.6.2",
+        "postcss": "^8.4.14",
+        "tailwindcss": "^3.1.6"
+    },
+    "dependencies": {
+        "daisyui": "^2.19.0"
+    }
+}
