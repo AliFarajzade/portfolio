@@ -15,5 +15,40 @@
         <script src="scripts/main.ts" defer type="module"></script>
         <title>Portfolio</title>
     </head>
-    <body></body>
+    <body
+        class="bg-bkg text-white selection:bg-accent selection:text-bkg overflow-hidden"
+    >
+        <main id="paralex">
+            <nav
+                class="flex justify-between items-center absolute w-full top-0 z-50 left-1/2 -translate-x-1/2 p-2 sm:p-5 gap-4 container"
+            >
+                <div class="flex items-center gap-2 sm:gap-8">
+                    <a
+                        href="/"
+                        aria-label="Navbar Home Link"
+                        class="btn btn-ghost 2xl:btn-lg focus:outline-none focus-visible:ring-4 focus-visible:ring-accent"
+                    >
+                        Home
+                    </a>
+                    <a
+                        href="#about"
+                        aria-label="Navbar About Link"
+                        class="btn btn-ghost 2xl:btn-lg focus:outline-none focus-visible:ring-4 focus-visible:ring-accent"
+                    >
+                        About
+                    </a>
+                    <a
+                        href="#contact"
+                        aria-label="Navbar Contact Link"
+                        class="btn btn-ghost 2xl:btn-lg focus:outline-none focus-visible:ring-4 focus-visible:ring-accent"
+                    >
+                        Contact
+                    </a>
+                </div>
+                <div class="pr-4">
+                    <a href="#projects" class="neon-button">PROJECTS</a>
+                </div>
+            </nav>
+        </main>
+    </body>
 </html>
