@@ -1,4 +1,5 @@
 import gsap from 'gsap'
+import { observer, projectsElement } from './toast'
 
 const loaderProgressElement = document.getElementById(
     'loaderProgress'
@@ -74,6 +75,7 @@ const startProgress = () => {
 
             setTimeout(() => {
                 loaderElement.remove()
+                observer.observe(projectsElement)
             }, 2500)
 
             return
