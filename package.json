@@ -12,7 +12,9 @@
     "license": "ISC",
     "devDependencies": {
         "@parcel/transformer-sass": "2.6.2",
-        "parcel": "^2.6.2"
+        "autoprefixer": "^10.4.7",
+        "parcel": "^2.6.2",
+        "postcss": "^8.1.0"
     },
     "dependencies": {
         "gsap": "^3.10.4"
