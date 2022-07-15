@@ -75,7 +75,7 @@ const startProgress = () => {
 
             setTimeout(() => {
                 loaderElement.remove()
-                observer.observe(projectsElement)
+                if (window.innerWidth > 600) observer.observe(projectsElement)
             }, 2500)
 
             return
