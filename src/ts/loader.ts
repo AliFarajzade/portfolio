@@ -34,8 +34,8 @@ const startProgress = () => {
 
             gsap.to('#loaderBox', {
                 borderRadius: '50%',
-                width: '45rem',
-                height: '45rem',
+                width: window.innerWidth < 400 ? '40rem' : '45rem',
+                height: window.innerWidth < 400 ? '40rem' : '45rem',
                 delay: 0.1,
                 duration: 1,
             })

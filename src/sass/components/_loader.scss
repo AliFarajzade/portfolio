@@ -52,6 +52,10 @@ body {
         transform: translate(-50%, -50%);
         width: 37rem;
         opacity: 0;
+
+        @media (max-width: 400px) {
+            width: 32rem;
+        }
     }
 
     &__progress {
