@@ -17,6 +17,12 @@
     &__item {
         font-size: 2rem;
 
+        @media (max-width: 400px) {
+            &:not(:first-of-type) {
+                display: none;
+            }
+        }
+
         &:hover {
             color: #351b55;
         }
