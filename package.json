@@ -5,7 +5,8 @@
     "source": "src/index.html",
     "scripts": {
         "dev": "parcel -p 3000",
-        "build": "parcel build --no-source-maps"
+        "build": "parcel build --no-source-maps",
+        "build:server": "serve ./dist"
     },
     "keywords": [],
     "author": "Ali Farajzade",
